@@ -9,7 +9,15 @@ const http = require('http');
 
 http.createServer(function(req, res) {
 	
+	/**
+	 * When you hit the request this will
+	 * be printed on node console
+	 */
 	console.log('I got request');
+
+	/**
+	 * This will be the output send to end client (browser or mobile) 
+	 */
 	res.end('My first web server in nodejs');
 
 }).listen(8000);

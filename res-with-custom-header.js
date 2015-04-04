@@ -1,9 +1,9 @@
 const http = require('http');
 
 var server = http.createServer(resWithHeader);
-server.listen(8000);
-
-console.log('Server running and waiting for request');
+server.listen(8000, function() {
+	console.log('Server running and waiting for request');	
+});
 
 function resWithHeader(req, res) {
 	

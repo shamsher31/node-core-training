@@ -20,4 +20,6 @@ http.createServer(function(req, res) {
 	 */
 	res.end('My first web server in nodejs');
 
-}).listen(8000);
+}).listen(8000, function() {
+	console.log('Server running and waiting for request');	
+});

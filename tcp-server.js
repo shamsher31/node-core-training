@@ -3,8 +3,6 @@ var net = require('net'),
 
 server = net.createServer(function(sock) {
 	
-	sock.write('Sending data from server');
-
 	sock.on('error', function(error) {
 		if (error) {
 			console.log(error);
@@ -13,7 +11,11 @@ server = net.createServer(function(sock) {
 
 	sock.on('close', function() {
 		console.log('Subscriber Disconnected');
-	})
+	});
+
+	sock.write('This data is send from a server');
+
+	sock.pipe(sock);
 
 });
 

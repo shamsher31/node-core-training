@@ -1,7 +1,7 @@
-Node Core Training
+Node Training
 ==================
 
-Understand basics of Node core functionality.
+Understand different basics of Node functionality by practicing code samples. 
 
 ## Author
 
